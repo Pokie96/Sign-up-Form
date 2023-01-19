@@ -8,6 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="sideBar"></div>
+    <header>
+        <p>
+            This is not a real online service! You know you need something like 
+            this in you life to help you realize your deepest dreams. Sign up 
+            <em>now</em> to get started.
+        </p>
+        <p>
+            You <em>know</em> you want to.
+        </p>
+    </header>
+    <main>
+        <p>Let's do this!</p>
+        <form action="index.html" method="get" class="form">
+            <div class="formInputWrapper">
+                <div class="formColumn1">
+                    <div class="formRow1">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" >
+                    </div>
+                    <div class="formRow2">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="formRow3">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                </div>
+                <div class="formColumn2">
+                    <div class="formRow1">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div class="formRow2">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                    </div>
+                    <div class="formRow3">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword">
+                    </div>
+                </div>
+            </div>
+            <div class="formFooter">
+                <div class="formSubmit">
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="footerText">
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
