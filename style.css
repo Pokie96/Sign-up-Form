@@ -7,11 +7,29 @@ body{
     flex-direction: row;
     border: 200px solid rgba(0, 0, 0, 0.918);
     margin: 0;
-    height: 100vh;
+    height: 1230px;
+}
+
+.sideBar{
+    position: relative;
 }
 
 .sideBarImage{
     width: auto;
     height: 100%;
+}
+
+.logoBanner{
+    position: absolute;
+    width: 100%;
+    bottom: 450px;
+    background-color: rgba(22, 20, 21, 0.65);
+    display: flex;
+    justify-content: center;
+}
+
+.sideBarLogo{
+    height: 200px;
+    width: auto;
 }
 
