@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    border: 200px solid rgba(0, 0, 0, 0.918);
+    margin: 0;
+    height: 100vh;
+}
+
+.sideBarImage{
+    width: auto;
+    height: 100%;
+}
+
