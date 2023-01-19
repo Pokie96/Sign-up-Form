@@ -2,10 +2,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Norse";
+    src: url(fonts/Norse/norse-bold-webfont.woff) format("woff");
+}
+
 body{
     display: flex;
     flex-direction: row;
-    border: 200px solid rgba(0, 0, 0, 0.918);
+    border: 100px solid rgba(0, 0, 0, 0.918);
+    border-left: 300px solid rgba(0, 0, 0, 0.918);
+    border-right: 300px solid rgba(0, 0, 0, 0.918);
     margin: 0;
     height: 1230px;
 }
@@ -15,21 +22,31 @@ body{
 }
 
 .sideBarImage{
-    width: auto;
+    object-fit: cover;
+    width: 600px;
     height: 100%;
 }
 
 .logoBanner{
     position: absolute;
     width: 100%;
-    bottom: 450px;
-    background-color: rgba(22, 20, 21, 0.65);
+    height: 20%;
+    bottom: 600px;
+    background-color: rgba(10, 10, 10, 0.5);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .sideBarLogo{
-    height: 200px;
+    height: 80%;
     width: auto;
+}
+
+.sideBarTitle{
+    color: white;
+    font-family: 'Norse', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
 }
 
