@@ -156,6 +156,7 @@ form{
     display: flex;
     flex-direction: column;
     margin-right: 100px;
+    position: relative;
 }
 
 label{
@@ -178,6 +179,15 @@ input:hover{
 input:focus{
     border: 1px solid blue;
     box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.3);
+}
+
+.alertMessage{
+    content: "*Passwords do not match";
+    visibility: hidden;
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    top: 35px;
 }
 
 button[type="submit"]{
