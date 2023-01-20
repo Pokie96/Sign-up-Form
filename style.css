@@ -165,7 +165,44 @@ label{
     color: rgb(109, 109, 109);
 }
 
+label[for="firstName"]::before{
+    content: "*";
+    padding-right: 3px;
+}
+
+label[for="email"]::before{
+    content: "*";
+    padding-right: 3px;
+}
+
+label[for="password"]::before{
+    content: "*";
+    padding-right: 3px;
+}
+
+label[for="lastName"]::before{
+    content: "*";
+    padding-right: 3px;
+}
+
+label[for="confirmPassword"]::before{
+    content: "*";
+    padding-right: 3px;
+}
+
+label[for="phoneNumber"]::after{
+    content: "(Optional)";
+    padding-left: 3px;
+}
+
 input{
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+    height: 32px;
+}
+
+input:default{
     outline: none;
     border-radius: 4px;
     border: 1px solid #E5E7EB;
@@ -180,6 +217,15 @@ input:focus{
     border: 1px solid blue;
     box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.3);
 }
+
+input:required:focus:invalid{
+    border-color: red;
+}
+
+input:valid{
+    border-color: #517736;
+}
+
 
 .alertMessage{
     content: "*Passwords do not match";
